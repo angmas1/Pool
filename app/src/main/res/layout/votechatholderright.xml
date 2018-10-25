@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="true"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/vchatimr"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/vchatll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toLeftOf="@id/vchatimr"
+        app:layout_constraintWidth_percent="0.7">
+
+        <TextView
+            android:id="@+id/vnameright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="5dp"
+            android:paddingTop="2.5dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="2.5dp"
+            android:text="name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/round"
+            android:backgroundTint="#cfccff"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingTop="3dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:id="@+id/vquestionleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:backgroundTint="#cfccff"
+                android:text="message"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/vrecycleroptionsright"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vtimeright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:alpha="0.5"
+            android:paddingLeft="5dp"
+            android:paddingTop="2.5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2.5dp"
+            android:text="time"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

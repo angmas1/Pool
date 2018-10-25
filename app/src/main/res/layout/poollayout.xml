@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#ffffff"
+    android:clipChildren="true"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.31"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:padding="6dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/football" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/poollayouttitle"
+                android:textSize="27dp"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:maxLength="40"
+                android:paddingLeft="6dp"
+                android:paddingRight="3dp"
+                android:text="Dominos pool anyone? Pleasekkkkkkkkkkkkk"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:id="@+id/poollayoutdesc"
+            android:gravity="center_vertical"
+            android:maxLength="140"
+            android:maxLines="2"
+            android:paddingLeft="7dp"
+            android:paddingRight="10dp"
+            android:text="Description : I need four people so as to reduce cost please join my pool fafa."
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="42"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:paddingLeft="7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Pooling for : "
+                    android:textColor="#ff8400"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="Football"
+                    android:id="@+id/poollayoutsubtitle"
+                    android:textColor="#ff8400"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="45"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Ends in : "
+                    android:textColor="#1eff00"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:id="@+id/poollayouttimer"
+                    android:text="11hrs 40mins"
+                    android:textColor="#1eff00"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="4dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:elevation="15dp"
+        android:src="@drawable/mes1"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/linearLayout"
+        app:layout_constraintRight_toRightOf="@id/linearLayout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/poollayoutrv"
+        app:layout_constraintHeight_percent="0.62"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/poollayoutinout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        app:layout_constraintHeight_percent="0.07"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:elevation="50dp"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rvm_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2.5dp"
+    android:layout_marginEnd="2.5dp"
+    android:layout_marginStart="2.5dp"
+    android:layout_marginTop="2.5dp"
+    android:orientation="horizontal"
+    tools:context=".EventViewHolder">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:paddingTop="4dp"
+                android:paddingLeft="9.5dp"
+                android:paddingRight="9.5dp"
+                android:id="@+id/imageView"
+                android:layout_width="102dp"
+                android:layout_height="96dp"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:src="@drawable/football"/>
+            <TextView
+                android:textAlignment="center"
+                android:paddingBottom="2dp"
+                android:textSize="14dp"
+                android:id="@+id/subtype"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textStyle="italic"
+                android:textColor="#000000"
+                android:text="Red Chillies"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:paddingLeft="7dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:textSize="25dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                android:id="@+id/title"
+                android:text="Dominos pool anyone? Pleasekkkkkkkkkkkkk"
+                android:paddingRight="5dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:maxLines="2"
+                android:textColor="#000000"
+                android:maxLength="113"
+                android:id="@+id/description"
+                android:text="Description : I need four people so as to reduce cost please join my pool fafa."
+                android:textSize="16dp"
+                android:paddingRight="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:weightSum="36">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="13"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:maxLength="11"
+                        android:textColor="#000000"
+                        android:layout_height="match_parent"
+                        android:text="Strength : " />
+                    <TextView
+                        android:textSize="14dp"
+                        android:layout_width="wrap_content"
+                        android:maxLength="3"
+                        android:id="@+id/strength"
+                        android:textColor="#000000"
+                        android:layout_height="match_parent"
+                        android:text="99" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="23"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:maxLength="10"
+                        android:layout_height="match_parent"
+                        android:textColor="#0dc900"
+                        android:textSize="14dp"
+                        android:text="Ends in : " />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="#0dc900"
+                        android:textSize="14dp"
+                        android:id="@+id/timer"
+                        android:text="11hrs  40mins" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="100"
+    android:clipChildren="false"
+    android:backgroundTint="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="32"
+        android:background="#FF3F51B5"
+        android:orientation="vertical"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="horizontal">
+            <ImageView
+                android:padding="6dp"
+                android:id="@+id/imageView"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:src="@drawable/football"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="6dp"
+                android:paddingRight="3dp"
+                android:gravity="center_vertical"
+                android:text="Dominos pool anyone? Please"
+                android:textStyle="bold"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="20dp"
+                android:autoSizeMaxTextSize="30dp"
+                android:textColor="#ffffff"
+                android:maxLines="2"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:gravity="center_vertical"
+            android:maxLength="140"
+            android:maxLines="2"
+            android:paddingLeft="7dp"
+            android:paddingRight="10dp"
+            android:text="Description : I need four people so as to reduce cost please join my pool fafa."
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="53"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:paddingLeft="7dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Pooling for  :  "
+                    android:textColor="#ff8400"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="Football"
+                    android:textColor="#ff8400"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="47"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="left"
+                android:paddingLeft="5dp"
+                android:gravity="left"
+                android:paddingRight="7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Ends in : "
+                    android:textColor="#1eff00"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="11hrs  40mins"
+                    android:singleLine="true"
+                    android:textColor="#1eff00"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="68">
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginTop="-33dp">
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="50"
+        android:layout_height="match_parent"
+        android:textColor="#ff4040"
+        android:background="@drawable/round"
+        android:text="Delete"
+        android:textSize="17dp"
+        android:layout_marginRight="1dp"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="50"
+        android:layout_height="match_parent"
+        android:textColor="#FFFF4040"
+        android:background="@drawable/round"
+        android:text="Leave"
+        android:textSize="17dp"
+        android:layout_marginLeft="1dp"/>
+    </LinearLayout>
+</LinearLayout>

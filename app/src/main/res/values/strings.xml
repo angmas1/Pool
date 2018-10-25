@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pool</string>
+    <string name="hello">hello</string>
+    <string name="title_activity_about">About</string>
+</resources>
